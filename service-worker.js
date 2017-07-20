@@ -28,15 +28,29 @@ self.addEventListener('activate', function(e) {
 });
 
 
+// self.addEventListener('fetch', function(e) {
+//   console.log('[ServiceWorker] Fetch', e.request.url);
+//   e.respondWith(
+//     caches.match(e.request).then(function(response) {
+//       return response || fetch(e.request);
+//     })
+//   );
+// });
+
+//captura automaticamente y almacenarlas en cahe
 self.addEventListener('fetch', function(e) {
   console.log('[ServiceWorker] Fetch', e.request.url);
   e.respondWith(
     caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
-    })
+      return response || fetch(e.request).then(function(response){
+        return caches.open(cacheName).then(function(cache){
+          cache.put(e.request, response.clone());
+          return response;
+        });
+      });
+    });
   );
 });
-
 
 
 
