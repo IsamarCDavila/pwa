@@ -1,0 +1,82 @@
+/**{
+  outline: 1px solid red;
+}*/
+.container .recientes{
+  height: 60px;
+  background-color: #ca0538;
+  color:#ffffff !important;
+}
+.container .relacionados{
+  height: 60px;
+  background-color: #434343;
+  color:#ffffff !important;
+}
+footer.page-footer{
+  background-color: #ca0538;
+  height: 100px;
+}
+.containertag{
+  /*padding-bottom: 30px !important;*/
+  padding-top: 30px !important;
+}
+.white-text{
+  color: #ffffff !important;
+  height: 24px;
+  font-family: Roboto;
+}
+.imgArti, .imgArticuloRela{
+  padding: 0 !important;
+  margin-top: 24px;
+}
+.titulo{
+  font-family: Roboto;
+  font-size: 20px;
+  color: #434343;
+}
+.tituloRela{
+  font-family: Roboto;
+  font-size: 20px;
+  color: #434343;
+}
+/*.description{
+  margin: 10px;
+}*/
+.tarjetas{
+  display: inline-block !important;
+  width: 59px;
+  height: 26px;
+  border-radius: 1px;
+  background-color: #888d91;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
+  font-family: Roboto;
+  font-size: 12px;
+  color: #ffffff;
+}
+.btnSaber{
+    width: 120px;
+   height: 30px;
+   border-radius: 2px;
+   background-color: #ca0538;
+   font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+}
+/*.weather-forecast .icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.weather-forecast .icon.clear-day {
+    background-image: url("/images/clear.png");
+}*/
+/*.container .imgArticulo .images1{
+    background-image: url("../images/img1.png");
+}*/
+/*.tag{
+  width: 59px;
+ height: 26px;
+ border-radius: 1px;
+ background-color: #888d91;
+ box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+ margin-bottom: 10px;
+}*/

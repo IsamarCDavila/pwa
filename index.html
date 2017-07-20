@@ -1,0 +1,102 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PWA-prueba</title>
+  <!-- link estilos -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- manifest -->
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <nav>
+      <div class="nav-wrapper">
+        <!-- <a href="./" alt="Cloudinary PWA Demo" class="brand-logo" id="nav-logo" >
+        </a> -->
+        <div class="container">
+          <div class="col-md-9 recientes">
+            <p>ARTÍCULOS MÁS RECIENTES</p>
+          </div>
+          <div class="col-md-3 relacionados"><p>ARTÍCULOS RELACIONADOS</p></div>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="loader">
+      <svg viewBox="0 0 32 32" width="32" height="32">
+        <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+      </svg>
+    </div> -->
+
+    <main class="main">
+      <div class="container">
+        <!-- <div class="container"> -->
+          <div class="loader">
+            <svg viewBox="0 0 32 32" width="32" height="32">
+              <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+            </svg>
+          </div>
+          <!-- <div class="row" class="loader" id="person-list">
+            Loading..
+          </div> -->
+          <div class="articuloTemplate">
+            <div class=" containerArticulos">
+              <div class="col-md-7">
+                <div class="containertag">
+                  <div class="tag"></div>
+                </div>
+                <h1 class="titulo"></h1>
+                <p class="description"></p>
+                <p class="date"></p>
+                <a class="btnSaber" href="" hidden></a>
+                <!-- <a class="btnSaber" href="">Saber Más</a> -->
+              </div>
+              <div class="col-md-2 imgArti">
+                  <img class="imgArticulo" src="#" alt="" hidden>
+              </div>
+              <div class="col-md-3">
+                <div>
+                  <img class="imgArticuloRela" src="#" alt="" hidden>
+                </div>
+                <div class="containertag">
+                  <div class="tag"></div>
+                </div>
+                <p class="tituloRela"></p>
+                <p class="descriptionRela"></p>
+              </div>
+            </div>
+          </div>
+        <!-- </div>-->
+      </div>
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">jQuery Progressive Web App Demo</h5>
+            <p class="white-text text-lighten-4">Progressive Web Apps and using service worker progressively.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container white-text">
+        © 2017 Copyright Comex
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/app.js" async></script>
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+           .register('./service-worker.js')
+           .then(function() { console.log('Service Worker Registered'); });
+    }
+    </script>
+</body>
+</html>
