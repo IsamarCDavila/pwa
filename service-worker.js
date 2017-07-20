@@ -1,17 +1,6 @@
 var cacheName="comex";
 var currentCacheNames = [ cacheName];
-var fileToCache = [
-  'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js',
-  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
-  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
-  '/'/*,
-  '/index.html',
-  '/images.json',
-  '/scripts/app.js',
-  '/css/style.css',
-  '/images/img1.png',
-  '/images/artrelacionado.png'*/
-];
+var fileToCache = [];
 
 self.addEventListener('install',function(e){
   console.log('serviceWorker Install');
