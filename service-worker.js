@@ -38,17 +38,31 @@ self.addEventListener('activate', function(e) {
 // });
 
 //captura automaticamente y almacenarlas en cahe
-self.addEventListener('fetch', function(e) {
-  console.log('[ServiceWorker] Fetch', e.request.url);
-  e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request).then(function(response){
-        return caches.open(cacheName).then(function(cache){
-          cache.put(e.request, response.clone());
+// self.addEventListener('fetch', function(e) {
+//   console.log('[ServiceWorker] Fetch', e.request.url);
+//   e.respondWith(
+//     caches.match(e.request).then(function(response) {
+//       return response || fetch(e.request).then(function(response){
+//         return caches.open(cacheName).then(function(cache){
+//           cache.put(e.request, response.clone());
+//           return response;
+//         });
+//       });
+//     });
+//   );
+// });
+
+
+this.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request).then(function(resp) {
+      return resp || fetch(event.request).then(function(response) {
+        return caches.open(cacheName).then(function(cache) {
+          cache.put(event.request, response.clone());
           return response;
         });
       });
-    });
+    })
   );
 });
 
