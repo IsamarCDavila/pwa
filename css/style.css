@@ -113,7 +113,7 @@ footer.page-footer{
   background: #F44336;
 }
 
-.fab__ripple {
+/*.fab__ripple {
   position: absolute;
   left: -17px;
   bottom: -12px;
@@ -138,7 +138,7 @@ footer.page-footer{
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
+}*/
 
 .fab:active .fab__ripple {
   opacity: 0.2;
@@ -151,6 +151,39 @@ footer.page-footer{
   z-index: 3;
 }
 /*--FIN NOTIFICACION CAMPANA--*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*.weather-forecast .icon {
     background-repeat: no-repeat;
     background-size: contain;
