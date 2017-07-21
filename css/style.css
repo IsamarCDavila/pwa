@@ -112,7 +112,38 @@ footer.page-footer{
 .fab.active {
   background: #F44336;
 }
+/*--MENSAJE DE ACTIVACION DE NOTIFICACION--*/
+.toast__msg {
+  width: 250px;
+  min-height: 50px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 15px;
+  padding-right: 10px;
+  word-break: break-all;
+  -webkit-transition: opacity 3s cubic-bezier(0, 0, 0.30, 1) 0;
+  -webkit-transition: opacity 0.30s cubic-bezier(0, 0, 0.30, 1) 0;
+  transition: opacity 0.30s cubic-bezier(0, 0, 0.30, 1) 0;
+  text-transform: initial;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
 
+.toast__msg--hide {
+  opacity: 0;
+}
+/*--FIN MENSAJE DE ACTIVACION DE NOTIFICACION--*/
 /*.fab__ripple {
   position: absolute;
   left: -17px;
