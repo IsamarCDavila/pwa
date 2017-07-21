@@ -112,6 +112,14 @@ footer.page-footer{
 .fab.active {
   background: #F44336;
 }
+/*--CONTAINER NOTIFICACION--*/
+.toast__container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  pointer-events: none;
+}
+/*--FIN CONTAINER NOTIFICACION--*/
 /*--MENSAJE DE ACTIVACION DE NOTIFICACION--*/
 .toast__msg {
   width: 250px;
