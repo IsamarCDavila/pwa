@@ -1,4 +1,4 @@
-var cacheName="comex";
+var cacheName="comexperu";
 var currentCacheNames = [ cacheName];
 var fileToCache = [];
 

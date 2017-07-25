@@ -53,7 +53,8 @@
         userVisibleOnly: true //Always show notification when received
       })
       .then(function (subscription) {
-        toast('Subscribed successfully.');
+        toast('Suscrito correctamente.');
+        // toast('Subscribed successfully.');
         console.info('Push notification subscribed.');
         console.log(subscription);
         //saveSubscriptionID(subscription);
@@ -82,7 +83,8 @@
         //Unsubscribe `push notification`
         subscription.unsubscribe()
           .then(function () {
-            toast('Unsubscribed successfully.');
+            toast('Se ha cancelado la suscripción.');
+            // toast('Unsubscribed successfully.');
             console.info('Push notification unsubscribed.');
             console.log(subscription);
             //deleteSubscriptionID(subscription);
